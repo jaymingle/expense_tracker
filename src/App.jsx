@@ -5,7 +5,7 @@ import IncomeExpense from "./components/IncomeExpense.jsx";
 import TransactionList from "./components/TransactionList.jsx";
 import AddTransaction from "./components/AddTransaction.jsx";
 
-import {GlobalProvider} from "./context/GlobalState.js";
+import {GlobalProvider} from "./context/GlobalState";
 
 function App() {
   return (
