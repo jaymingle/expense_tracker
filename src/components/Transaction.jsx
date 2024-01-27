@@ -1,8 +1,12 @@
 import React from "react";
 
-const Transaction = ({amount, text}) => {
+const Transaction = ({id, amount, text}) => {
 
     const sign = amount < 0 ? '-' : '+';
+
+    const deleteTransactionHandler = () => {
+
+    }
 
     return (
         <div>
