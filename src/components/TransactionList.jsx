@@ -1,3 +1,6 @@
+import React, {useContext} from "react";
+import {GlobalContext} from "../context/GlobalState.jsx";
+
 const TransactionList = () => {
     return(
         <>
