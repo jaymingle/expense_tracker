@@ -3,7 +3,8 @@ import {GlobalContext} from "../context/GlobalState.jsx";
 
 const TransactionList = () => {
 
-    const context = useContext(GlobalContext);
+    // const context = useContext(GlobalContext);
+    const {transactions} = useContext(GlobalContext);
     console.log(context)
 
     return(
