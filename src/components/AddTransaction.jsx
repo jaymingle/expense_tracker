@@ -1,6 +1,11 @@
 import {useState} from "react";
 
 const AddTransaction = () => {
+
+    const transactionSubmitHandler = (e) => {
+        e.preventDefault()
+    }
+
     return (
         <div>
             <h3>Add new transaction</h3>
@@ -16,7 +21,7 @@ const AddTransaction = () => {
                     >
                     <input type="number" id="amount" placeholder="Enter amount..."/>
                 </div>
-                <input className="btn" type={submit}>Add transaction</input>
+                <input className="btn" type="submit">Add transaction</input>
             </form>
         </div>
     )
