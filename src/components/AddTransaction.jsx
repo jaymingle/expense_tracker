@@ -1,8 +1,10 @@
+import {useState} from "react";
+
 const AddTransaction = () => {
     return (
         <div>
             <h3>Add new transaction</h3>
-            <form id="form">
+            <form onSubmit={transactionSubmitHandler}>
                 <div className="form-control">
                     <label htmlFor="text">Text</label>
                     <input type="text" id="text" placeholder="Enter text..."/>
@@ -14,7 +16,7 @@ const AddTransaction = () => {
                     >
                     <input type="number" id="amount" placeholder="Enter amount..."/>
                 </div>
-                <button className="btn">Add transaction</button>
+                <input className="btn" type={submit}>Add transaction</input>
             </form>
         </div>
     )
