@@ -1,5 +1,7 @@
-import React, {useContext, useReducer} from "react";
+import React, {createContext, useReducer} from "react";
 
+
+//Setting Initial State
 const initialState = {
     transactions: [
       { id: 1, text: 'Flower', amount: -20 },
@@ -8,3 +10,6 @@ const initialState = {
       { id: 4, text: 'Camera', amount: 150 }
     ]
 }
+
+//Create Context
+export const GlobalContext = createContext(initialState)
