@@ -5,12 +5,12 @@ const AddTransaction = () => {
     const [transactionText, setTransactionText] = useState('')
     const [transactionCost, setTransactionCost] = useState(0)
 
-    const transactionTextHandler = () => {
-
+    const transactionTextHandler = (e) => {
+        console.log(e.target.value)
     }
 
-    const transactionAmountHandler = () => {
-
+    const transactionAmountHandler = (e) => {
+        console.log(e.target.value)
     }
 
     const transactionSubmitHandler = (e) => {
