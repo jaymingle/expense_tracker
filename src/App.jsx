@@ -1,6 +1,7 @@
 import './App.css'
 import Header from "./components/Header.jsx";
 import Balance from "./components/Balance.jsx";
+import IncomeExpense from "./components/IncomeExpense.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <div className="container">
             <Balance/>
         </div>
+        <IncomeExpense/>
     </>
   )
 }
