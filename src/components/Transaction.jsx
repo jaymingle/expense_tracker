@@ -7,7 +7,7 @@ const Transaction = ({amount, text}) => {
     return (
         <div>
             <li className={`${amount > 0 ? 'plus' : 'minus' }`}>
-                {text} <span>{sign}${amount}</span><button className="delete-btn">x</button>
+                {text} <span>{sign}${Math.abs(amount)}</span><button className="delete-btn">x</button>
             </li>
         </div>
     )
