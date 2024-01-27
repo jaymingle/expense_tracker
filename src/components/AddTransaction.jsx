@@ -5,3 +5,4 @@ const AddTransaction = () => {
         </div>
     )
 }
+export default AddTransaction;
