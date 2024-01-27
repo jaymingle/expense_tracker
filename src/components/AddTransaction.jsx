@@ -2,6 +2,9 @@ import {useState} from "react";
 
 const AddTransaction = () => {
 
+    const [transactionText, setTransactionText] = useState('')
+    const [transactionCost, setTransactionCost] = useState(0)
+
     const transactionSubmitHandler = (e) => {
         e.preventDefault()
     }
