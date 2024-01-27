@@ -5,7 +5,7 @@ const TransactionList = () => {
 
     // const context = useContext(GlobalContext);
     const {transactions} = useContext(GlobalContext);
-    console.log(context)
+    console.log(transactions)
 
     return(
         <>
