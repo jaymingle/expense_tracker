@@ -5,8 +5,17 @@ const AddTransaction = () => {
     const [transactionText, setTransactionText] = useState('')
     const [transactionCost, setTransactionCost] = useState(0)
 
+    const transactionTextHandler = () => {
+
+    }
+
+    const transactionAmountHandler = () => {
+
+    }
+
     const transactionSubmitHandler = (e) => {
         e.preventDefault()
+        console.log("Transaction Added")
     }
 
     return (
@@ -15,11 +24,11 @@ const AddTransaction = () => {
             <form onSubmit={transactionSubmitHandler}>
                 <div className="form-control">
                     <label htmlFor="text">Text</label>
-                    <input type="text" id="text" placeholder="Enter text..."/>
+                    <input type="text" onChange={transactionTextHandler} id="text" placeholder="Enter text..."/>
                 </div>
                 <div className="form-control">
                     <label htmlFor="amount">Amount <br/>(negative - expense, positive - income)</label>
-                    <input type="number" id="amount" placeholder="Enter amount..."/>
+                    <input type="number" onChange={transactionAmountHandler} id="amount" placeholder="Enter amount..."/>
                 </div>
                 <input className="btn" type="submit" value="Add transaction"/>
             </form>
