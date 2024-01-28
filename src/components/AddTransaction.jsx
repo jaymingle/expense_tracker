@@ -24,8 +24,7 @@ const AddTransaction = () => {
             text,
             amount
         }
-        console.log("Transaction", newTransaction)
-
+        addTransaction(newTransaction)
         setText('')
         setAmount(0)
     }
