@@ -5,9 +5,11 @@ import transaction from "./Transaction.jsx";
 const IncomeExpense = () => {
 
     const {transactions} = useContext(GlobalContext)
-   console.log(transactions)
+   // console.log(transactions)
     const amount = transactions.map(transaction => transaction.amount)
-    console.log(amount)
+    // console.log(amount)
+    const income = amount.filter(figure => figure > 0)
+    console.log(income)
 
     return(
         <div className="inc-exp-container">
