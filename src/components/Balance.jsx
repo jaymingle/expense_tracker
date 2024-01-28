@@ -7,7 +7,7 @@ const Balance = () => {
 
     const amount = transactions.map(transaction => transaction.amount)
     console.log(amount)
-    const total = amount.reduce((acc, amount) => (acc += amount), 0).toFixed(2)
+    const total = amount.reduce((acc, amount) => (acc += amount), 0)
     console.log(total)
 
     return(
