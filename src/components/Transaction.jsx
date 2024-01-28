@@ -1,12 +1,12 @@
 import React, {useContext} from "react";
 import {GlobalContext} from "../context/GlobalState.jsx";
 
-const Transaction = ({id, amount, text}) => {
+const Transaction = ({id, amount, text, transaction}) => {
     const {deleteTransaction} = useContext(GlobalContext)
     const sign = amount < 0 ? '-' : '+';
 
     const deleteTransactionHandler = () => {
-        deleteTransaction(id)
+        deleteTransaction(transaction.id)
     }
 
     return (
