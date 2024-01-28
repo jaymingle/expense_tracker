@@ -3,7 +3,7 @@ import {GlobalContext} from "../context/GlobalState.jsx";
 
 const AddTransaction = () => {
 
-    const
+    const {addTransaction} = useContext(GlobalContext)
 
     const [transactionText, setTransactionText] = useState('')
     const [transactionCost, setTransactionCost] = useState(0)
@@ -23,7 +23,6 @@ const AddTransaction = () => {
             transactionText,
             transactionCost
         }
-
         console.log("Transaction", newTransaction)
 
         setTransactionText('')
