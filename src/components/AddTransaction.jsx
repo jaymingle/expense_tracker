@@ -5,23 +5,24 @@ const AddTransaction = () => {
 
     const {addTransaction} = useContext(GlobalContext)
 
-    const [transactionText, setTransactionText] = useState('')
-    const [transactionCost, setTransactionCost] = useState(0)
+    const [text, setText] = useState('')
+    const [amount, setAmount] = useState(0)
 
     const transactionTextHandler = (e) => {
-        setTransactionText(e.target.value)
+        setText(e.target.value)
     }
 
     const transactionAmountHandler = (e) => {
-        setTransactionCost(e.target.value)
+        setAmount(e.target.value)
     }
 
-    const transactionSubmitHandler = (e) => {
+    const transactionSubmitHandler = e => {
         e.preventDefault()
         console.log("Transaction Added")
         let newTransaction = {
-            transactionText,
-            transactionCost
+            id: Math.floor(Math.random() * 100000000),
+            text,
+            amount
         }
         console.log("Transaction", newTransaction)
 
