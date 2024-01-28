@@ -6,10 +6,11 @@ const Transaction = ({id, amount, text}) => {
     const {transactions} = useContext(GlobalContext)
     const sign = amount < 0 ? '-' : '+';
 
-    const deleteTransactionHandler = () => {
-        console.log(id, text)
+    const deleteTransactionHandler = id => {
+        // console.log(id, text)
+        console.log(id)
         console.log(transactions)
-        transactions.filter(transaction => transaction.id !== id)
+        // transactions.filter(transaction => transaction.id !== id)
     }
 
     return (
