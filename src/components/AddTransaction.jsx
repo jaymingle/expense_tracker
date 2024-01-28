@@ -36,11 +36,11 @@ const AddTransaction = () => {
             <form onSubmit={transactionSubmitHandler}>
                 <div className="form-control">
                     <label htmlFor="text">Text</label>
-                    <input type="text" onChange={transactionTextHandler} value={transactionText} id="text" placeholder="Enter text..."/>
+                    <input type="text" onChange={transactionTextHandler} value={text} id="text" placeholder="Enter text..."/>
                 </div>
                 <div className="form-control">
                     <label htmlFor="amount">Amount <br/>(negative - expense, positive - income)</label>
-                    <input type="number" onChange={transactionAmountHandler} value={transactionCost} id="amount" placeholder="Enter amount..."/>
+                    <input type="number" onChange={transactionAmountHandler} value={amount} id="amount" placeholder="Enter amount..."/>
                 </div>
                 <input className="btn" type="submit" value="Add transaction"/>
             </form>
