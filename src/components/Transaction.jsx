@@ -9,6 +9,7 @@ const Transaction = ({id, amount, text}) => {
     const deleteTransactionHandler = () => {
         console.log(id, text)
         console.log(transactions)
+        transactions.filter(transaction => transaction.id !== id)
     }
 
     return (
