@@ -8,7 +8,7 @@ const Transaction = ({id, amount, text}) => {
 
     const deleteTransactionHandler = () => {
         console.log(id, text)
-        console.log(context)
+        console.log(transactions)
     }
 
     return (
