@@ -2,7 +2,8 @@ import React, {useContext} from "react";
 import {GlobalContext} from "../context/GlobalState.jsx";
 
 const Transaction = ({id, amount, text}) => {
-    const context = useContext(GlobalContext);
+    // const context = useContext(GlobalContext);
+    const {transactions} = useContext(GlobalContext)
     const sign = amount < 0 ? '-' : '+';
 
     const deleteTransactionHandler = () => {
