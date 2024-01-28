@@ -6,7 +6,7 @@ const Transaction = ({id, amount, text, transaction}) => {
     const sign = amount < 0 ? '-' : '+';
 
     const deleteTransactionHandler = () => {
-        deleteTransaction(transaction.id)
+        deleteTransaction(id)
     }
 
     return (
