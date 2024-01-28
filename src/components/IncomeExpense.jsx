@@ -5,13 +5,11 @@ import transaction from "./Transaction.jsx";
 const IncomeExpense = () => {
 
     const {transactions} = useContext(GlobalContext)
-   // console.log(transactions)
     const amount = transactions.map(transaction => transaction.amount)
-    // console.log(amount)
-    const income = amount.filter(figure => figure > 0).reduce((income, total) => total += income,0).toFixed(2)
+    const income = Number(amount.filter(figure => figure > 0).reduce((income, total) => total += income,0).toFixed(2))
     console.log(income)
 
-    const expense = amount.filter(figure => figure < 0).reduce((expense, total) => total += expense, 0).toFixed(2)
+    const expense = Number(amount.filter(figure => figure < 0).reduce((expense, total) => total += expense, 0).toFixed(2))
     console.log(expense)
 
     return(
