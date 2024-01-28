@@ -11,7 +11,8 @@ const IncomeExpense = () => {
     const income = amount.filter(figure => figure > 0).reduce((income, total) => total += income,0)
     console.log(income)
 
-
+    const expense = amount.filter(figure => figure < 0).reduce((expense, total) => total += expense, 0)
+    console.log(expense)
 
     return(
         <div className="inc-exp-container">
