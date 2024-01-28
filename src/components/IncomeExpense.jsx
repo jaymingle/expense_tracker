@@ -8,7 +8,7 @@ const IncomeExpense = () => {
    // console.log(transactions)
     const amount = transactions.map(transaction => transaction.amount)
     // console.log(amount)
-    const income = amount.filter(figure => figure > 0)
+    const income = amount.filter(figure => figure > 0).reduce((income, total) => total += income,0)
     console.log(income)
 
     return(
