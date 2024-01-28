@@ -9,7 +9,7 @@ const IncomeExpense = () => {
     const income = Number(amount.filter(figure => figure > 0).reduce((income, total) => total += income,0).toFixed(2))
     console.log(income)
 
-    const expense = Number(amount.filter(figure => figure < 0).reduce((expense, total) => total += expense, 0).toFixed(2))
+    const expense = Number((amount.filter(figure => figure < 0).reduce((expense, total) => total += expense, 0) * -1).toFixed(2))
     console.log(expense)
 
     return(
