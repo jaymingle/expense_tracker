@@ -26,8 +26,8 @@ const AddTransaction = () => {
         }
         console.log("Transaction", newTransaction)
 
-        setTransactionText('')
-        setTransactionCost(0)
+        setText('')
+        setAmount(0)
     }
 
     return (
